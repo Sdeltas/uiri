@@ -4,6 +4,8 @@
 
 Uiri turns the hidden trip from browser to website into a scrollable 3D journey. You can follow the example or enter a public website to see real DNS and security details where available. The map and timing are simplified estimates, not an exact route through the internet.
 
+The starting journey is an illustration, not a claim about Uiri.com's current hosting. Enter a URL to trace that site's observed DNS, TLS, and CDN details.
+
 ![A request crossing the ocean in Uiri](design/s5.png)
 
 ## The Journey

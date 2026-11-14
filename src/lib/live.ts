@@ -40,7 +40,7 @@ export const EXAMPLE: Journey = {
   tldNs: "a.gtld-servers.net",
   authNs: TARGET_NS,
   protocol: "TLSv1.3",
-  cipher: "TLS_AES_128_GCM_SHA256",
+  cipher: "TLS_AES_256_GCM_SHA384",
   chain: [TARGET_HOST, "intermediate CA", "root CA"],
   provider: "Vercel",
   pop: { code: "fra1", city: "Frankfurt", lat: HOPS.frankfurt.lat, lng: HOPS.frankfurt.lng },

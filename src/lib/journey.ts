@@ -13,12 +13,10 @@ export type Hop = LatLng & {
   detail: string;
 };
 
-/** The domain the visitor "types". Change these three together (values from `dig`, Oct 2026). */
-export const TARGET_HOST = "jsmastery.com";
-/** A record the DNS stage returns (Vercel anycast address serving jsmastery.com). */
-export const TARGET_IP = "216.150.1.1";
-/** Authoritative nameserver for the zone (GoDaddy DNS). */
-export const TARGET_NS = "ns53.domaincontrol.com";
+/** Host and DNS facts observed for the scripted Uiri example on 2026-11-14. */
+export const TARGET_HOST = "uiri.com";
+export const TARGET_IP = "74.208.14.186";
+export const TARGET_NS = "ns1.dnsnameservice.com";
 
 export const HOPS = {
   rijeka: { id: "rijeka", name: "Rijeka", detail: "You, on a home connection", lat: 45.327, lng: 14.442 },

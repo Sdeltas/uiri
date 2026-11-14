@@ -234,7 +234,7 @@ const BLOCKS: { pos: [number, number]; size: [number, number]; kind: "bar" | "he
 ];
 
 function Page() {
-  const hero = useMemo(heroTexture, []);
+  const hero = useMemo(() => heroTexture(), []);
   useEffect(() => () => hero.dispose(), [hero]);
   const starts = useMemo(() => {
     const r = rng(23);
