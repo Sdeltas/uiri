@@ -10,7 +10,7 @@ export function Loader() {
   return (
     <div className={`loader ${ready ? "is-done" : ""}`} aria-hidden={ready}>
       <div className="loader-orb" />
-      <div className="loader-title">What happens when you type a URL</div>
+      <div className="loader-title">uiri</div>
       <div className="loader-bar">
         <div style={{ transform: `scaleX(${Math.max(0.04, loaded)})` }} />
       </div>

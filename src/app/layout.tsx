@@ -1,11 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const sans = Space_Grotesk({ variable: "--font-sans", subsets: ["latin"], weight: ["400", "500", "700"] });
-const mono = JetBrains_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
+const sans = localFont({
+  variable: "--font-sans",
+  src: [
+    { path: "../fonts/space-grotesk-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/space-grotesk-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/space-grotesk-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+});
+const mono = localFont({
+  variable: "--font-mono",
+  src: [
+    { path: "../fonts/jetbrains-mono-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/jetbrains-mono-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/jetbrains-mono-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "../fonts/jetbrains-mono-latin-700-normal.woff2", weight: "700", style: "normal" },
+    { path: "../fonts/jetbrains-mono-latin-800-normal.woff2", weight: "800", style: "normal" },
+  ],
+});
 
-const title = "What happens when you type a URL";
+const title = "Uiri | What happens when you type a URL";
 const description =
   "Follow one request from your address bar through DNS, TCP, TLS, a CDN edge and a submarine cable under the Atlantic, then back to a rendered page. In 3D, in 1.2 seconds.";
 
@@ -21,7 +37,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description, images: ["/og.jpg"] },
 };
 
-export const viewport: Viewport = { themeColor: "#06060f", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#080610", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

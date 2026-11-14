@@ -68,7 +68,7 @@ function draw(canvas: HTMLCanvasElement, text: string, s: LabelStyle) {
   const x = align === "center" ? W / 2 : padX;
   g.font = main;
   g.fillStyle = s.color ?? "#e6f6ff";
-  g.shadowColor = s.color ?? "#22d3ee";
+  g.shadowColor = s.color ?? "#8b7bff";
   g.shadowBlur = s.bg ? 0 : 10;
   g.fillText(text, x, padY + lineH / 2);
   g.shadowBlur = 0;

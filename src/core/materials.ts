@@ -2,13 +2,13 @@ import * as THREE from "three";
 
 /** Palette from design/hero.png. Values > 1 are HDR and feed the bloom pass. */
 export const COLORS = {
-  bg: new THREE.Color("#06060f"),
-  cyan: new THREE.Color("#22d3ee"),
+  bg: new THREE.Color("#080610"),
+  cyan: new THREE.Color("#8b7bff"),
   magenta: new THREE.Color("#e879f9"),
   red: new THREE.Color("#ff3b5c"),
   gold: new THREE.Color("#ffb347"),
 };
-export const HEX = { bg: "#06060f", cyan: "#22d3ee", magenta: "#e879f9", red: "#ff4d6d", gold: "#ffc56b" };
+export const HEX = { bg: "#080610", cyan: "#8b7bff", magenta: "#e879f9", red: "#ff4d6d", gold: "#ffc56b" };
 
 export const hdr = (c: THREE.Color, k: number) => c.clone().multiplyScalar(k);
 

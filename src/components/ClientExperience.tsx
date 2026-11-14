@@ -7,7 +7,7 @@ function Boot() {
   return (
     <div className="loader">
       <div className="loader-orb" />
-      <div className="loader-title">What happens when you type a URL</div>
+      <div className="loader-title">uiri</div>
       <div className="loader-bar">
         <div style={{ transform: "scaleX(0.04)" }} />
       </div>

@@ -57,7 +57,7 @@ export function ScrollDriver() {
     <div ref={track} className="track" style={{ height: `${SCROLL_VH}vh` }}>
       {/* Readable outline of the whole story for screen readers and crawlers. */}
       <article className="sr-only">
-        <h1>What happens when you type a URL</h1>
+        <h1>Uiri | What happens when you type a URL</h1>
         {STAGES.map((s) => (
           <section key={s.id}>
             <h2>{s.title}</h2>

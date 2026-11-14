@@ -13,7 +13,6 @@ export function Hud() {
   const hotspot = useStore((s) => s.hotspot);
   const debug = useStore((s) => s.debug);
   const ready = useStore((s) => s.ready);
-  const origin = useStore((s) => s.origin);
   const set = useStore((s) => s.set);
   const ms = useRef<HTMLSpanElement>(null);
   const fill = useRef<HTMLDivElement>(null);
@@ -80,6 +79,7 @@ export function Hud() {
       <header className="hud-top">
         <div className="hud-stage" ref={stageText}>
           <div className="hud-kicker">
+            <span className="hud-brand">uiri</span>
             <span className="hud-num">{String(stage + 1).padStart(2, "0")}</span>
             <span className="hud-of">/ {String(STAGES.length).padStart(2, "0")}</span>
             <span className="hud-short">{meta.short}</span>
@@ -93,9 +93,7 @@ export function Hud() {
             <span ref={ms}>0</span>
             <small>ms</small>
           </div>
-          <div className="hud-clock-sub">
-            {live ? journey.visitor.city : origin.city} → {journey.host}
-          </div>
+          <div className="hud-clock-sub">Port → Site</div>
           <div className={`hud-badge ${live ? "live" : ""}`}>
             {live ? (
               <>
