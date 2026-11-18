@@ -39,6 +39,4 @@ Then open http://localhost:3000. Add `?debug` to show developer performance stat
 
 The debug mode and the `github.com` shared-trace link were checked in the running app. More implementation and performance details are in [SCENES.md](SCENES.md) and [PERF.md](PERF.md).
 
-## Open Source
 
-No license has been selected yet. Choose and add a license before inviting others to reuse or distribute the project.
